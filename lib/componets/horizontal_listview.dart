@@ -8,7 +8,18 @@ class HorizontalList extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          
+          Category(
+            image_location: 'images/cats/shirt.png',
+            image_caption: 'shirt',
+          ),
+          Category(
+            image_location: 'images/cats/shirt.png',
+            image_caption: 'shirt',
+          ),
+          Category(
+            image_location: 'images/cats/shirt.png',
+            image_caption: 'shirt',
+          ),
         ],
       ),
     );
@@ -26,12 +37,23 @@ class Category extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: EdgeInsets.all(2.0),
+    return Padding(padding: const EdgeInsets.all(2.0),
       child: InkWell(
         onTap: (){},
-        child: ListTile(
-          title: Image.asset(image_location),
-          subtitle: Text(image_caption),
+        child: Container(
+          width: 100, 
+          child: ListTile(
+            title: Image.asset(image_location,
+              height: 80.0,
+              width: 100.0,
+            ),
+            subtitle: Container(
+              alignment: Alignment.topCenter,
+              child: Text(image_caption,
+                style: TextStyle(fontSize: 12.0),
+              ),
+            )
+          ),
         ),
       ),
     );
