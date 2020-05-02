@@ -54,6 +54,12 @@ flutter:
     - images/c3.png
     - images/c4.png
     - images/cats/tshirt.png
+    - images/cats/dress.png
+    - images/cats/formal.png
+    - images/cats/informal.png
+    - images/cats/jeans.png
+    - images/cats/shoe.png
+    - images/cats/accessories.png
     - images/products/blazer1.jpeg
     - images/products/blazer2.jpeg
     - images/products/dress1.jpeg
